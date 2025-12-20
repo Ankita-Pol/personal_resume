@@ -1,17 +1,115 @@
 {
-  "personal": {},
-  "links": [],
-  "education": [],
-  "projects": [],
+  "personal": {
+    "name": "Ankita Pol",
+    "role": "Frontend Developer",
+    "location": "Kolhapur, Maharashtra, India",
+    "email": "theankita473@gmail.com",
+    "phone": "+91 9322083889",
+    "summary": "Motivated Frontend Developer with 6 months of hands-on industry experience, skilled in building modern, responsive, and user-friendly web interfaces. Strong understanding of React.js, API integration, UI/UX principles, and performance optimization.",
+    "relocation": [
+      "Bengaluru, Karnataka",
+      "Pune, Maharashtra",
+      "Kolhapur, Maharashtra"
+    ],
+    "photo": "assets/images/profile.jpg"
+  },
+
+  "portfolioLinks": [
+    {
+      "label": "Portfolio",
+      "url": "https://portfolio-f17y.vercel.app/",
+      "type": "website"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ankita-pol-86852b213",
+      "type": "linkedin"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Ankita-Pol",
+      "type": "github"
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Jr. Front End Developer",
+      "company": "Ascensify Technologies",
+      "location": "Kolhapur, Maharashtra",
+      "type": "Internship",
+      "duration": "February 2025 – August 2025",
+      "responsibilities": [
+        "Developed responsive and user-friendly web pages using HTML, CSS, and JavaScript with cross-browser compatibility.",
+        "Built interactive UI components using React.js with reusable component architecture.",
+        "Integrated REST APIs and displayed dynamic data efficiently.",
+        "Used Git and GitHub for version control with clean commit history.",
+        "Optimized performance by reducing DOM complexity and optimizing assets.",
+        "Implemented mobile-first layouts using Flexbox and CSS Grid.",
+        "Collaborated with designers to convert Figma/Adobe XD designs into production-ready UI.",
+        "Worked in Agile environment with daily stand-ups and sprint planning."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Government College of Engineering, Karad",
+      "location": "Maharashtra, India",
+      "duration": "August 2023 – June 2025",
+      "score": "CGPA: 7.9",
+      "projects": [
+        "Personal Portfolio using React.js",
+        "Music School Website using Next.js",
+        "E-commerce Website using API and Redux"
+      ]
+    }
+  ],
+
   "skills": {
-    "primary": [],
-    "secondary": []
+    "primary": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js"
+    ],
+    "secondary": [
+      "Angular",
+      "Bootstrap",
+      "Frontend Development",
+      "Communication Skills"
+    ]
   },
+
   "tools": {
-    "primary": [],
-    "secondary": []
+    "primary": [
+      "Git",
+      "GitHub"
+    ],
+    "secondary": [
+      "VS Code",
+      "Chrome DevTools",
+      "Figma"
+    ]
   },
-  "achievements": [],
-  "extracurricular": [],
-  "references": []
+
+  "achievements": [
+    "Completed industry-level Frontend Internship at Ascensify Technologies",
+    "Built and deployed multiple real-world projects using React.js",
+    "Hands-on experience with API integration and responsive UI development"
+  ],
+
+  "extracurricular": [
+    "Continuous self-learning through frontend projects",
+    "UI/UX improvement and performance optimization practice"
+  ],
+
+  "references": [
+    {
+      "name": "Available on Request",
+      "relation": "",
+      "contact": ""
+    }
+  ]
 }
