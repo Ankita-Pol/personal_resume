@@ -1,59 +1,48 @@
-# ResumeUi
+# Resume UI – Angular Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+## 👤 Candidate Details
+**Name:** Ankita Pol  
+**Role Applied For:** Frontend Developer  
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Project Overview
+This project is a **pixel-perfect, responsive Resume UI** built using **Angular**.  
+It displays personal, professional, and academic details in a clean, modern, and well-structured layout.
 
+The resume data is loaded from a **static JSON file** and rendered using reusable Angular components.
+
+---
+
+## 🛠️ Tech Stack
+- Angular (Standalone Components)
+- TypeScript
+- HTML
+- SCSS
+- Git & GitHub
+- GitHub Pages (Hosting)
+
+---
+
+## 📂 Project Structure (High Level)
+- `src/` – Application source code
+- `assets/` – Resume JSON data and images
+- `layout/` – Sidebar and main content components
+- `core/services/` – Resume data service
+- `gh-pages` branch – Production build files for hosting
+
+---
+
+## ▶️ How to Run the Project Locally
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- Angular CLI
+
+### Steps
 ```bash
+git clone https://github.com/Ankita-Pol/personal_resume.git
+cd personal_resume
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<img width="1757" height="982" alt="r" src="https://github.com/user-attachments/assets/ddc88383-1f16-4aa4-a590-7504b675bf00" />
