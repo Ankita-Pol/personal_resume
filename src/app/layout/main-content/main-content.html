@@ -1,1 +1,79 @@
-<p>main-content works!</p>
+<main class="main-content">
+
+  <!-- SUMMARY -->
+  <section>
+   <div>
+     <h2>Profile Summary</h2>
+    <p>{{personal?.summary}}</p>
+
+   </div>
+    <p>{{ education?.length ? '' : '' }}</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+
+    <div *ngFor="let exp of experience" class="block">
+      <h3>{{ exp.role }}</h3>
+      <p class="muted">
+        {{ exp.company }} • {{ exp.location }} • {{ exp.duration }}
+      </p>
+
+      <ul>
+        <li *ngFor="let item of exp.responsibilities">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+
+    <div *ngFor="let edu of education" class="block">
+      <h3>{{ edu.degree }}</h3>
+      <p class="muted">
+        {{ edu.institution }} • {{ edu.location }}
+      </p>
+      <p>{{ edu.duration }} | {{ edu.score }}</p>
+
+      <p><strong>Academic Projects:</strong></p>
+      <ul>
+        <li *ngFor="let project of edu.projects">
+          {{ project }}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section>
+    <h2>Achievements</h2>
+    <ul>
+      <li *ngFor="let achievement of achievements">
+        {{ achievement }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- EXTRA CURRICULAR -->
+  <section>
+    <h2>Extra Curricular</h2>
+    <ul>
+      <li *ngFor="let activity of extracurricular">
+        {{ activity }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- REFERENCES -->
+  <!-- <section>
+    <h2>References</h2>
+    <p *ngFor="let ref of references">
+      {{ ref.name }}
+    </p>
+  </section> -->
+
+</main>
