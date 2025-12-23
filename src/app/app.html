@@ -7,14 +7,16 @@
   </app-sidebar>
 
   <app-main-content
+  [personal]="resumeData.personal"
     [education]="resumeData.education"
     [projects]="resumeData.projects"
     [experience]="resumeData.experience"
     [achievements]="resumeData.achievements"
     [extracurricular]="resumeData.extracurricular"
-    [references]="resumeData.references">
+    [references]="resumeData.references"
+    [testimonials]="resumeData.testimonials">
   </app-main-content>
+
+<!-- </app-testimonials> -->
 </div>
 
-
-<router-outlet />

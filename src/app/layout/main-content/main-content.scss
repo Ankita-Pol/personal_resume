@@ -1,37 +1,145 @@
-.main-content {
-  padding: 32px;
-  font-family: Arial, sans-serif;
-}
+// variables
+$text-muted: #666;
+$section-gap: 32px;
 
-section {
-  margin-bottom: 32px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-bottom: 12px;
+// mixin
+@mixin heading-border {
   border-bottom: 1px solid #ddd;
   padding-bottom: 4px;
 }
 
-h3 {
-  margin: 0 0 4px 0;
+.main-content {
+  flex: 1;
+  padding: 24px;
+  min-width: 420px;
+
+  section {
+    margin-bottom: $section-gap;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    @include heading-border;
+  }
+
+  h3 {
+    margin: 0 0 4px 0;
+  }
+
+  .block {
+    margin-bottom: 16px;
+  }
+
+  .muted {
+    color: $text-muted;
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+  }
 }
 
-.block {
-  margin-bottom: 16px;
+// .test{
+// display: grid;
+// grid-row: inherit;
+//   @media screen {
+//     min-width:min-content;
+//   }
+// }
+
+.testimonial {
+  // display: grid;
+  // grid-row: inherit;
+  padding: 20px;
+  margin: 10px;
+  // flex-direction: column;
+  display: flex;
+  display: inline-block;
+  // grid-column: span;
+  // grid-row: inherit;
+  height: 25%;
+  width: 25%;
+  background-color: rgb(228, 228, 228);
+  color: white;
+  overflow-x: hidden;
+  border-radius: 20px;
+
+
+  h3 {
+    color: black;
+  }
+
+  .user {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: grey;
+  }
+
+  .role {
+    text-decoration: underline;
+  }
+
+  p {
+    color: black;
+  }
+
+  :hover {
+    background-color: #dadada;
+  }
+
+  grid-template-columns: max-content;
 }
 
-.muted {
-  color: #666;
-  font-size: 14px;
+.testimonial.hover {
+  background-color: #666;
 }
 
-ul {
-  padding-left: 20px;
-}
 
-li {
-  margin-bottom: 6px;
-  font-size: 14px;
+// typography adjustment only
+@media (max-width: 600px) {
+  .main-content {
+    h2 {
+      font-size: 17px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    li {
+      font-size: 13px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .testimonial {
+      h2 {
+        font-size: 17px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      li {
+        font-size: 13px;
+      }
+    display: grid;
+    grid-template-columns: 2fr;
+    }
+
+
+  }
 }

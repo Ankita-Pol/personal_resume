@@ -5,7 +5,7 @@
     "location": "Kolhapur, Maharashtra, India",
     "email": "theankita473@gmail.com",
     "phone": "+91 9322083889",
-    "summary": "Motivated Frontend Developer with 6 months of hands-on industry experience, skilled in building modern, responsive, and user-friendly web interfaces. Strong understanding of React.js, API integration, UI/UX principles, and performance optimization.",
+    "summary": "Frontend Developer skilled in ReactJs, NextJs, Angular, and JavaScript. experience in building responsive, optimizated UIs with Redux and Rest APIs.",
     "relocation": [
       "Bengaluru, Karnataka",
       "Pune, Maharashtra",
@@ -111,5 +111,24 @@
       "relation": "",
       "contact": ""
     }
+  ]
+,
+  "testimonials" : [
+    {
+       "name" : "Krish",
+       "role" : "Associate Frontend Developer",
+       "message": "Greatest abality to understand the code"
+    },
+     {
+       "name" : "Vallabh",
+       "role" : "Trainee SDE ",
+       "message": "Unique solutions over critical problems"
+    },
+     {
+       "name" : "Radha",
+       "role" : "Senior Frontend Engineer",
+       "message": "Exclusive ui ideas, have potential to implent those"
+    }
+   
   ]
 }

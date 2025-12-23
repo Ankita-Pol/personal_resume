@@ -3,6 +3,7 @@ import { ResumeService } from './core/services/resume.service';
 import { Sidebar } from './layout/sidebar/sidebar';
 import { MainContent } from './layout/main-content/main-content';
 import { CommonModule } from '@angular/common';
+// import { Testimonials } from './testimonials/testimonials';
 
 @Component({
   selector: 'app-root',

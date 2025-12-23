@@ -17,5 +17,6 @@ export class MainContent {
   @Input() achievements: any;
   @Input() extracurricular: any;
   @Input() references: any;
+  @Input() testimonials: any;
 
 }

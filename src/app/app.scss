@@ -1,0 +1,24 @@
+// variables
+$sidebar-width: 280px;
+$min-main-width: 420px;
+
+// layout
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: auto;
+
+  app-sidebar {
+    width: $sidebar-width;
+    flex-shrink: 0;
+  }
+}
+
+// responsive but NOT stacking
+@media (max-width: 1024px) {
+  .app-layout {
+    overflow-x: auto;
+  }
+
+
+}

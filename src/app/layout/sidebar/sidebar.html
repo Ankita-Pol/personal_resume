@@ -1,1 +1,63 @@
-<p>sidebar works!</p>
+<aside class="sidebar">
+
+  <!-- Profile Image -->
+  <div class="profile">
+    <img
+      [src]="personal?.photo"
+      alt="Profile photo"
+      class="profile-image"
+    />
+
+    <h1 class="name">{{ personal?.name }}</h1>
+    <p class="role">{{ personal?.role }}</p>
+    <p class="location">{{ personal?.location }}</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="section">
+    <h3 class="section-title">Contact</h3>
+    <p>{{ personal?.email }}</p>
+    <p>{{ personal?.phone }}</p>
+  </div>
+
+  <!-- Portfolio Links -->
+  <div class="section">
+    <h3 class="section-title">Links</h3>
+    <ul class="links">
+      <li *ngFor="let link of links">
+        <a [href]="link.url" target="_blank">
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Skills -->
+  <div class="section">
+    <h3 class="section-title">Skills</h3>
+    <p class="sub-title">Primary</p>
+    <ul>
+      <li *ngFor="let skill of skills?.primary">{{ skill }}</li>
+    </ul>
+
+    <p class="sub-title">Secondary</p>
+    <ul>
+      <li *ngFor="let skill of skills?.secondary">{{ skill }}</li>
+    </ul>
+  </div>
+
+  <!-- Tools -->
+  <div class="section">
+    <h3 class="section-title">Tools</h3>
+    <p class="sub-title">Primary</p>
+    <ul>
+      <li *ngFor="let tool of tools?.primary">{{ tool }}</li>
+    </ul>
+
+    <p class="sub-title">Secondary</p>
+    <ul>
+      <li *ngFor="let tool of tools?.secondary">{{ tool }}</li>
+    </ul>
+  </div>
+
+</aside>

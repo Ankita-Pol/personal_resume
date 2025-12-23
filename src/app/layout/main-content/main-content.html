@@ -68,12 +68,15 @@
     </ul>
   </section>
 
-  <!-- REFERENCES -->
-  <!-- <section>
-    <h2>References</h2>
-    <p *ngFor="let ref of references">
-      {{ ref.name }}
-    </p>
-  </section> -->
+  <section class="test">
+ <div *ngFor="let testimonial of testimonials" class="block" class="testimonial">
+  <div class="user">{{testimonial.name[0]}}</div>
+      <h3>{{ testimonial.name }}</h3>
+      <p class="role">
+        {{ testimonial.role }}
+      </p>
+    <p>• {{ testimonial.message }}</p>
 
+    </div>
+    </section>
 </main>
